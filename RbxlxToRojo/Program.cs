@@ -64,17 +64,14 @@ namespace RbxlToRojo
                     ["$className"] = "DataModel",
                     ["ReplicatedStorage"] = new Dictionary<string, object>
                     {
-                        ["$className"] = "ReplicatedStorage",
                         ["$path"] = "src/ReplicatedStorage"
                     },
                     ["ServerScriptService"] = new Dictionary<string, object>
                     {
-                        ["$className"] = "ServerScriptService",
                         ["$path"] = "src/ServerScriptService"
                     },
                     ["Workspace"] = new Dictionary<string, object>
                     {
-                        ["$className"] = "Workspace",
                         ["$path"] = "src/Workspace"
                     }
                 }
@@ -165,6 +162,8 @@ namespace RbxlToRojo
                     }
                 }
             }
+
+            if (className == "Folder") return;
 
             var initContent = new
             {

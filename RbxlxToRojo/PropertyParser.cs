@@ -1,4 +1,8 @@
-﻿using System.Xml.Linq;
+﻿using System.Globalization;
+using System.Text;
+using System.Text.Json.Serialization;
+using System.Text.Unicode;
+using System.Xml.Linq;
 
 namespace RbxlToRojo;
 
@@ -32,6 +36,12 @@ public static class PropertyParser
         return float.Parse(value.Contains('.') ? value.Replace('.', ',') : value);
     }
 
+    private static double ParseAsDouble(this XElement prop)
+    {
+        var value = prop.Value;
+        return double.Parse(value.Contains('.') ? value.Replace('.', ',') : value);
+    }
+
     public static bool TryParse(XElement prop, out object? value)
     {
         var propName = prop.Attribute("name")?.Value;
@@ -40,65 +50,33 @@ public static class PropertyParser
         {
             value = prop.Name.LocalName switch
             {
-                "string" => prop.Value,
-                "bool" => prop.Value == "true",
-                "int" => int.Parse(prop.Value),
-                "int64" => long.Parse(prop.Value),
+                "string" => propValue,
+                "bool" => bool.Parse(propValue),
+                "int" => int.Parse(propValue),
+                "int64" => long.Parse(propValue),
                 "float" => prop.ParseAsFloat(),
-                "double" => double.Parse(prop.Value.Replace('.', ',')),
-                "BinaryString" => prop.Value,
-                "SharedString" => prop.Value,
-                "Content" => new { Url = prop.Element("url")?.Value },
-                "Ref" => new { Reference = prop.Value },
-                "UniqueId" => prop.Value,
+                "float64" => prop.ParseAsDouble(),
+                "BinaryString" => ParseBinaryString(prop),
+                "SharedString" => propValue,
+                "Content" => prop.Element("url")?.Value,
+                "Ref" => new { Reference = propValue },
+                "UniqueId" => new
+                {
+                    UniqueId = propValue
+                },
                 "CoordinateFrame" => ParseCoordinateFrame(prop),
-                "Vector2" => new
-                {
-                    X = prop.ParseElementAsFloat("X"), 
-                    Y = prop.ParseElementAsFloat("Y")
-                },
-                "Vector3" => new
-                {
-                    X = prop.ParseElementAsFloat("X"),
-                    Y = prop.ParseElementAsFloat("Y"),
-                    Z = prop.ParseElementAsFloat("Z")
-                },
-                "Color3" => new
-                {
-                    R = prop.ParseElementAsFloat("R"),
-                    G = prop.ParseElementAsFloat("G"),
-                    B = prop.ParseElementAsFloat("B")
-                },
+                "Vector2" => ParseVector2(prop),
+                "Vector3" => ParseVector3(prop),
+                "Color3" => ParseColor3(prop),
                 "Color3uint8" => ParseColor3Uint8(prop),
-                "UDim" => new
-                {
-                    S = prop.ParseElementAsFloat("S"),
-                    O = prop.ParseElementAsFloat("O")
-                },
-                "UDim2" => new
-                {
-                    XS = prop.ParseElementAsFloat("XS"),
-                    XO = prop.ParseElementAsFloat("XO"),
-                    YS = prop.ParseElementAsFloat("YS"),
-                    YO = prop.ParseElementAsFloat("YO")
-                },
+                "UDim" => ParseUDim(prop),
+                "UDim2" => ParseUDim2(prop),
                 "NumberRange" => ParseNumberRange(prop),
                 "PhysicalProperties" => ParsePhysicalProperties(prop),
-                "Rect2D" => new
-                {
-                    Min = new 
-                    { 
-                        X = prop.ParseElementAsFloat("MinX"),
-                        Y = prop.ParseElementAsFloat("MinY")
-                    },
-                    Max = new
-                    {
-                        X = prop.ParseElementAsFloat("MaxX"),
-                        Y = prop.ParseElementAsFloat("MaxY")
-                    }
-                },
-                "token" => ParseEnum(prop),
-                "SecurityCapabilities" => prop.Value,
+                "Rect" => ParseRect(prop),
+                "token" => prop.Value,
+                "ColorSequence" => ParseColorSequence(prop),
+                "NumberSequence" => ParseNumberSequence(prop),
                 "Font" => ParseFont(prop),
                 _ => null
             };
@@ -112,35 +90,82 @@ public static class PropertyParser
         }
     }
 
-    private static object ParseCoordinateFrame(XElement prop)
+    private static object ParseBinaryString(XElement prop)
     {
+        var name = prop.Attribute("name")?.Value;
+
+        if (name == "Tags") return ParseTags(prop);
+        
         return new
         {
-            X = prop.ParseElementAsFloat("X"),
-            Y = prop.ParseElementAsFloat("Y"),
-            Z = prop.ParseElementAsFloat("Z"),
-            R00 = prop.ParseElementAsFloat("R00"),
-            R01 = prop.ParseElementAsFloat("R01"),
-            R02 = prop.ParseElementAsFloat("R02"),
-            R10 = prop.ParseElementAsFloat("R10"),
-            R11 = prop.ParseElementAsFloat("R11"),
-            R12 = prop.ParseElementAsFloat("R12"),
-            R20 = prop.ParseElementAsFloat("R20"),
-            R21 = prop.ParseElementAsFloat("R21"),
-            R22 = prop.ParseElementAsFloat("R22")
+            BinaryString = prop.Value
         };
     }
 
-    private static object ParseColor3Uint8(XElement prop)
+    private static object ParseCoordinateFrame(XElement prop)
     {
-        uint colorValue = uint.Parse(prop.Value);
-        return new
+        var X = prop.ParseElementAsFloat("X");
+        var Y = prop.ParseElementAsFloat("Y");
+        var Z = prop.ParseElementAsFloat("Z");
+        var R00 = prop.ParseElementAsFloat("R00");
+        var R01 = prop.ParseElementAsFloat("R01");
+        var R02 = prop.ParseElementAsFloat("R02");
+        var R10 = prop.ParseElementAsFloat("R10");
+        var R11 = prop.ParseElementAsFloat("R11");
+        var R12 = prop.ParseElementAsFloat("R12");
+        var R20 = prop.ParseElementAsFloat("R20");
+        var R21 = prop.ParseElementAsFloat("R21");
+        var R22 = prop.ParseElementAsFloat("R22");
+        
+        return new 
         {
-            R = (colorValue >> 16) & 0xFF,
-            G = (colorValue >> 8) & 0xFF,
-            B = colorValue & 0xFF
+            CFrame = new
+            {
+                position = (float[])[X, Y, Z],
+                orientation = (float[][])[(float[])[R00, R01, R02], (float[])[R10, R11, R12], (float[])[R20, R21, R22]]
+            }
         };
     }
+
+    private static object ParseVector2(XElement prop) => new
+    {
+        Vector2 = (float[])
+            [prop.ParseElementAsFloat("X"), prop.ParseElementAsFloat("Y")]
+    };
+
+    private static object ParseVector3(XElement prop) => new
+    {
+        Vector3 = (float[])
+            [prop.ParseElementAsFloat("X"), prop.ParseElementAsFloat("Y"), prop.ParseElementAsFloat("Z")]
+    };
+
+    private static object ParseColor3(XElement prop) => new
+    {
+        Color3 = (float[])
+            [prop.ParseElementAsFloat("R"), prop.ParseElementAsFloat("G"), prop.ParseElementAsFloat("B")]
+    };
+
+    private static object ParseColor3Uint8(XElement prop)
+    {
+        var colorValue = uint.Parse(prop.Value);
+        return new
+        {
+            Color3uint8 = (float[])
+                [(colorValue >> 16) & 0xFF, (colorValue >> 8) & 0xFF, colorValue & 0xFF]
+        };
+    }
+
+    private static object ParseUDim(XElement prop) => new
+    {
+        UDim = (float[])
+            [prop.ParseElementAsFloat("S"), prop.ParseElementAsFloat("O")]
+    };
+
+    private static object ParseUDim2(XElement prop) => new
+    {
+        UDim2 = (float[][])
+            [[prop.ParseElementAsFloat("XS"), prop.ParseElementAsFloat("XO")], [prop.ParseElementAsFloat("YS"), prop.ParseElementAsFloat("YO")]]
+    };
 
     private static object ParseNumberRange(XElement prop)
     {
@@ -148,8 +173,7 @@ public static class PropertyParser
         var selected = parts.Select(part => part.Replace('.', ',')).ToArray();
         return new
         {
-            Min = float.Parse(selected[0]),
-            Max = float.Parse(selected[1])
+            NumberRange = (float[]) [float.Parse(selected[0]), float.Parse(selected[1])]
         };
     }
 
@@ -157,16 +181,80 @@ public static class PropertyParser
     {
         var customPhysics = prop.Element("CustomPhysics")?.Value == "true";
         if (!customPhysics)
-            return new { CustomPhysics = false };
+            return new { PhysicalProperties = "Default" };
 
         return new
         {
             CustomPhysics = true,
-            Density = prop.ParseElementAsFloat("Density"),
-            Friction = prop.ParseElementAsFloat("Friction"),
-            Elasticity = prop.ParseElementAsFloat("Elasticity"),
-            FrictionWeight = prop.ParseElementAsFloat("FrictionWeight"),
-            ElasticityWeight = prop.ParseElementAsFloat("ElasticityWeight")
+            density = prop.ParseElementAsFloat("Density"),
+            friction = prop.ParseElementAsFloat("Friction"),
+            elasticity = prop.ParseElementAsFloat("Elasticity"),
+            frictionWeight = prop.ParseElementAsFloat("FrictionWeight"),
+            elasticityWeight = prop.ParseElementAsFloat("ElasticityWeight")
+        };
+    }
+
+    private static object ParseRect(XElement prop) => new
+    {
+        Rect = (float[][])
+        [
+            [prop.ParseElementAsFloat("MinX"), prop.ParseElementAsFloat("MinY")],
+            [prop.ParseElementAsFloat("MaxX"), prop.ParseElementAsFloat("MaxY")]
+        ]
+    };
+
+    private static object ParseColorSequence(XElement prop)
+    {
+        var keypoints = new List<Dictionary<string, object>>();
+
+        foreach (var keypointElement in prop.Elements("Keypoint"))
+        {
+            var time = ParseElementAsFloat(keypointElement, "Time");
+            var colorElement = keypointElement.Element("Value");
+        
+            var color = new[]
+            {
+                float.Parse(colorElement.Element("R")?.Value ?? "0", CultureInfo.InvariantCulture),
+                float.Parse(colorElement.Element("G")?.Value ?? "0", CultureInfo.InvariantCulture),
+                float.Parse(colorElement.Element("B")?.Value ?? "0", CultureInfo.InvariantCulture)
+            };
+        
+            keypoints.Add(new Dictionary<string, object>
+            {
+                ["time"] = time,
+                ["color"] = color
+            });
+        }
+
+        return new Dictionary<string, object>
+        {
+            ["ColorSequence"] = new Dictionary<string, object>
+            {
+                ["keypoints"] = keypoints
+            }
+        };
+    }
+
+    private static object ParseNumberSequence(XElement prop)
+    {
+        var keypoints = new List<Dictionary<string, object>>();
+
+        foreach (var keypointElement in prop.Elements("Keypoint"))
+        {
+            keypoints.Add(new Dictionary<string, object>
+            {
+                ["time"] = ParseElementAsFloat(keypointElement, "Time"),
+                ["value"] = ParseElementAsFloat(keypointElement, "Value"),
+                ["envelope"] = ParseElementAsFloat(keypointElement, "Envelope")
+            });
+        }
+
+        return new
+        {
+            NumberSequence = new Dictionary<string, object>
+            {
+                ["keypoints"] = keypoints
+            }
         };
     }
 
@@ -174,10 +262,31 @@ public static class PropertyParser
     {
         return new
         {
-            Family = prop.Element("Family")?.Element("url")?.Value,
-            Weight = prop.ParseElementAsFloat("Weight"),
-            Style = prop.Attribute("Style")?.Value,
-            CachedFaceId = prop.Element("CachedFaceId")?.Element("url")?.Value
+            family = prop.Element("Family")?.Element("url")?.Value,
+            weight = prop.ParseElementAsFloat("Weight"),
+            style = prop.Element("Style")?.Value,
+            cachedFaceId = prop.Element("CachedFaceId")?.Element("url")?.Value
+        };
+    }
+
+    private static object ParseTags(XElement prop)
+    {
+        var value = prop.Value;
+        
+        if (string.IsNullOrEmpty(value))
+        {
+            return new
+            {
+                Tags = Array.Empty<string>()
+            };
+        }
+
+        var tagBytes = Convert.FromBase64String(value);
+        var tags = Encoding.UTF8.GetString(tagBytes).Split('\0', StringSplitOptions.RemoveEmptyEntries).Where(t => !string.IsNullOrWhiteSpace(t));
+            
+        return new
+        {
+            Tags = (string[])tags
         };
     }
 
