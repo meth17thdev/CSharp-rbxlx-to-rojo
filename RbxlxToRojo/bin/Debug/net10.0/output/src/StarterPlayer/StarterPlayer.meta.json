@@ -1,0 +1,71 @@
+{
+  "Name": "StarterPlayer",
+  "ClassName": "StarterPlayer",
+  "Properties": {
+    "AllowCustomAnimations": true,
+    "AttributesSerialize": "",
+    "AutoJumpEnabled": true,
+    "AvatarJointUpgrade_SerializedRollout": "0",
+    "CameraMaxZoomDistance": 400.0,
+    "CameraMinZoomDistance": 0.5,
+    "CameraMode": "0",
+    "Capabilities": "0",
+    "CharacterJumpHeight": 7.2,
+    "CharacterJumpPower": 50.0,
+    "CharacterMaxSlopeAngle": 89.0,
+    "CharacterUseJumpPower": true,
+    "CharacterWalkSpeed": 16.0,
+    "ClassicDeath": true,
+    "DefinesCapabilities": false,
+    "DevCameraOcclusionMode": "0",
+    "DevComputerCameraMovementMode": "0",
+    "DevComputerMovementMode": "0",
+    "DevTouchCameraMovementMode": "0",
+    "DevTouchMovementMode": "0",
+    "EnableDynamicHeads": "0",
+    "EnableMouseLockOption": true,
+    "GameSettingsAssetIDFace": 0,
+    "GameSettingsAssetIDHead": 0,
+    "GameSettingsAssetIDLeftArm": 0,
+    "GameSettingsAssetIDLeftLeg": 0,
+    "GameSettingsAssetIDPants": 0,
+    "GameSettingsAssetIDRightArm": 0,
+    "GameSettingsAssetIDRightLeg": 0,
+    "GameSettingsAssetIDShirt": 0,
+    "GameSettingsAssetIDTeeShirt": 0,
+    "GameSettingsAssetIDTorso": 0,
+    "GameSettingsAvatar": "0",
+    "GameSettingsR15Collision": "0",
+    "GameSettingsScaleRangeBodyType": {
+      "Min": 0.0,
+      "Max": 1.0
+    },
+    "GameSettingsScaleRangeHead": {
+      "Min": 0.95,
+      "Max": 1.0
+    },
+    "GameSettingsScaleRangeHeight": {
+      "Min": 0.9,
+      "Max": 1.05
+    },
+    "GameSettingsScaleRangeProportion": {
+      "Min": 0.0,
+      "Max": 1.0
+    },
+    "GameSettingsScaleRangeWidth": {
+      "Min": 0.7,
+      "Max": 1.0
+    },
+    "HealthDisplayDistance": 100.0,
+    "HistoryId": "00000000000000000000000000000000",
+    "LoadCharacterAppearance": true,
+    "LoadCharacterLayeredClothing": "0",
+    "LuaCharacterController": "0",
+    "NameDisplayDistance": 100.0,
+    "RagdollDeath": true,
+    "SourceAssetId": -1,
+    "Tags": "",
+    "UniqueId": "36ba87fd092f34d5084b268800000343",
+    "UserEmotesEnabled": true
+  }
+}

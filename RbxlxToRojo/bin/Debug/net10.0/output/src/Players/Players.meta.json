@@ -1,0 +1,19 @@
+{
+  "Name": "Players",
+  "ClassName": "Players",
+  "Properties": {
+    "AttributesSerialize": "",
+    "BanningEnabled": true,
+    "Capabilities": "0",
+    "CharacterAutoLoads": true,
+    "DefinesCapabilities": false,
+    "HistoryId": "00000000000000000000000000000000",
+    "MaxPlayersInternal": 12,
+    "PreferredPlayersInternal": 0,
+    "RespawnTime": 5.0,
+    "SourceAssetId": -1,
+    "Tags": "",
+    "UniqueId": "36ba87fd092f34d5084b268800000333",
+    "UseStrafingAnimations": false
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "Name": "ProfileStore",
+  "ClassName": "ModuleScript",
+  "Properties": {
+    "AttributesSerialize": "",
+    "Capabilities": "0",
+    "DefinesCapabilities": false,
+    "HistoryId": "00000000000000000000000000000000",
+    "LinkedSource": {
+      "Url": null
+    },
+    "ScriptGuid": "{0A98758D-CB51-4B78-BBA3-13FB37AC7F8A}",
+    "SourceAssetId": -1,
+    "Tags": "",
+    "UniqueId": "6d8a1cdd6dff7844084bbb360000762f"
+  }
+}

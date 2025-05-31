@@ -1,0 +1,17 @@
+{
+  "Name": "promise",
+  "ClassName": "ModuleScript",
+  "Properties": {
+    "AttributesSerialize": "",
+    "Capabilities": "0",
+    "DefinesCapabilities": false,
+    "HistoryId": "00000000000000000000000000000000",
+    "LinkedSource": {
+      "Url": null
+    },
+    "ScriptGuid": "{C4966223-5264-483D-B6DA-6B5F6AD24620}",
+    "SourceAssetId": -1,
+    "Tags": "",
+    "UniqueId": "6d8a1cdd6dff7844084bbb3600007614"
+  }
+}

@@ -1,0 +1,17 @@
+D:\Work\Projects\C#\Consoles\RbxlToRojo\RbxlToRojo\bin\Debug\net10.0\RbxlToRojo.exe
+D:\Work\Projects\C#\Consoles\RbxlToRojo\RbxlToRojo\bin\Debug\net10.0\RbxlToRojo.deps.json
+D:\Work\Projects\C#\Consoles\RbxlToRojo\RbxlToRojo\bin\Debug\net10.0\RbxlToRojo.runtimeconfig.json
+D:\Work\Projects\C#\Consoles\RbxlToRojo\RbxlToRojo\bin\Debug\net10.0\RbxlToRojo.dll
+D:\Work\Projects\C#\Consoles\RbxlToRojo\RbxlToRojo\bin\Debug\net10.0\RbxlToRojo.pdb
+D:\Work\Projects\C#\Consoles\RbxlToRojo\RbxlToRojo\bin\Debug\net10.0\Newtonsoft.Json.dll
+D:\Work\Projects\C#\Consoles\RbxlToRojo\RbxlToRojo\obj\Debug\net10.0\RbxlToRojo.csproj.AssemblyReference.cache
+D:\Work\Projects\C#\Consoles\RbxlToRojo\RbxlToRojo\obj\Debug\net10.0\RbxlToRojo.GeneratedMSBuildEditorConfig.editorconfig
+D:\Work\Projects\C#\Consoles\RbxlToRojo\RbxlToRojo\obj\Debug\net10.0\RbxlToRojo.AssemblyInfoInputs.cache
+D:\Work\Projects\C#\Consoles\RbxlToRojo\RbxlToRojo\obj\Debug\net10.0\RbxlToRojo.AssemblyInfo.cs
+D:\Work\Projects\C#\Consoles\RbxlToRojo\RbxlToRojo\obj\Debug\net10.0\RbxlToRojo.csproj.CoreCompileInputs.cache
+D:\Work\Projects\C#\Consoles\RbxlToRojo\RbxlToRojo\obj\Debug\net10.0\RbxlToRojo.csproj.Up2Date
+D:\Work\Projects\C#\Consoles\RbxlToRojo\RbxlToRojo\obj\Debug\net10.0\RbxlToRojo.dll
+D:\Work\Projects\C#\Consoles\RbxlToRojo\RbxlToRojo\obj\Debug\net10.0\refint\RbxlToRojo.dll
+D:\Work\Projects\C#\Consoles\RbxlToRojo\RbxlToRojo\obj\Debug\net10.0\RbxlToRojo.pdb
+D:\Work\Projects\C#\Consoles\RbxlToRojo\RbxlToRojo\obj\Debug\net10.0\RbxlToRojo.genruntimeconfig.cache
+D:\Work\Projects\C#\Consoles\RbxlToRojo\RbxlToRojo\obj\Debug\net10.0\ref\RbxlToRojo.dll

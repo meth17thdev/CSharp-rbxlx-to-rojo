@@ -1,0 +1,22 @@
+{
+  "Name": "TestService",
+  "ClassName": "TestService",
+  "Properties": {
+    "AttributesSerialize": "",
+    "AutoRuns": true,
+    "Capabilities": "0",
+    "DefinesCapabilities": false,
+    "Description": "",
+    "ExecuteWithStudioRun": false,
+    "HistoryId": "00000000000000000000000000000000",
+    "IsPhysicsEnvironmentalThrottled": true,
+    "IsSleepAllowed": true,
+    "NumberOfPlayers": 0,
+    "SimulateSecondsLag": 0.0,
+    "SourceAssetId": -1,
+    "Tags": "",
+    "ThrottlePhysicsToRealtime": true,
+    "Timeout": 10.0,
+    "UniqueId": "36ba87fd092f34d5084b268800005758"
+  }
+}

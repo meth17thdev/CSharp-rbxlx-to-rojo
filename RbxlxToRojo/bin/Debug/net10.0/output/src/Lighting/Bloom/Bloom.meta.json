@@ -1,0 +1,17 @@
+{
+  "Name": "Bloom",
+  "ClassName": "BloomEffect",
+  "Properties": {
+    "AttributesSerialize": "",
+    "Capabilities": "0",
+    "DefinesCapabilities": false,
+    "Enabled": true,
+    "HistoryId": "00000000000000000000000000000000",
+    "Intensity": 1.0,
+    "Size": 24.0,
+    "SourceAssetId": -1,
+    "Tags": "",
+    "Threshold": 2.0,
+    "UniqueId": "36ba87fd092f34d5084b26880000038c"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "Name": "PlayerInventory",
+  "ClassName": "ModuleScript",
+  "Properties": {
+    "AttributesSerialize": "",
+    "Capabilities": "0",
+    "DefinesCapabilities": false,
+    "HistoryId": "00000000000000000000000000000000",
+    "LinkedSource": {
+      "Url": null
+    },
+    "ScriptGuid": "{C0804E01-D79A-43A5-AAD4-07A6C4851371}",
+    "SourceAssetId": -1,
+    "Tags": "",
+    "UniqueId": "6d8a1cdd6dff7844084bbb36000076b1"
+  }
+}

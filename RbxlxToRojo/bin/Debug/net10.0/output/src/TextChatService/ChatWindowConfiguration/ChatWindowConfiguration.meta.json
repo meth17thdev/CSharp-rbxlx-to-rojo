@@ -1,0 +1,42 @@
+{
+  "Name": "ChatWindowConfiguration",
+  "ClassName": "ChatWindowConfiguration",
+  "Properties": {
+    "AttributesSerialize": "",
+    "BackgroundColor3": {
+      "R": 0.09803922,
+      "G": 0.105882354,
+      "B": 0.11372549
+    },
+    "BackgroundTransparency": 0.3,
+    "Capabilities": "0",
+    "DefinesCapabilities": false,
+    "Enabled": true,
+    "FontFace": {
+      "Family": "rbxasset://fonts/families/GothamSSm.json",
+      "Weight": 500.0,
+      "Style": null,
+      "CachedFaceId": "rbxasset://fonts/Montserrat-Medium.ttf"
+    },
+    "HeightScale": 1.0,
+    "HistoryId": "00000000000000000000000000000000",
+    "HorizontalAlignment": "0",
+    "SourceAssetId": -1,
+    "Tags": "",
+    "TextColor3": {
+      "R": 1.0,
+      "G": 1.0,
+      "B": 1.0
+    },
+    "TextSize": 14,
+    "TextStrokeColor3": {
+      "R": 0.0,
+      "G": 0.0,
+      "B": 0.0
+    },
+    "TextStrokeTransparency": 0.5,
+    "UniqueId": "36ba87fd092f34d5084b268800000399",
+    "VerticalAlignment": "0",
+    "WidthScale": 1.0
+  }
+}

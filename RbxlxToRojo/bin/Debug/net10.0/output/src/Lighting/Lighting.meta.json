@@ -1,0 +1,52 @@
+{
+  "Name": "Lighting",
+  "ClassName": "Lighting",
+  "Properties": {
+    "Ambient": {
+      "R": 0.27450982,
+      "G": 0.27450982,
+      "B": 0.27450982
+    },
+    "AttributesSerialize": "AgAAACYAAABSQlhfTGlnaHRpbmdUZWNobm9sb2d5VW5pZmllZE1pZ3JhdGlvbgMBIAAAAFJC\nWF9PcmlnaW5hbFRlY2hub2xvZ3lPbkZpbGVMb2FkBAQAAAA=",
+    "Brightness": 3.0,
+    "Capabilities": "0",
+    "ColorShift_Bottom": {
+      "R": 0.0,
+      "G": 0.0,
+      "B": 0.0
+    },
+    "ColorShift_Top": {
+      "R": 0.0,
+      "G": 0.0,
+      "B": 0.0
+    },
+    "DefinesCapabilities": false,
+    "EnvironmentDiffuseScale": 1.0,
+    "EnvironmentSpecularScale": 1.0,
+    "ExposureCompensation": 0.0,
+    "FogColor": {
+      "R": 0.655,
+      "G": 0.729,
+      "B": 0.761
+    },
+    "FogEnd": 2500.0,
+    "FogStart": 0.0,
+    "GeographicLatitude": 41.7333,
+    "GlobalShadows": true,
+    "HistoryId": "00000000000000000000000000000000",
+    "LightingStyle": "0",
+    "OutdoorAmbient": {
+      "R": 0.27450982,
+      "G": 0.27450982,
+      "B": 0.27450982
+    },
+    "Outlines": true,
+    "PrioritizeLightingQuality": true,
+    "ShadowSoftness": 0.1,
+    "SourceAssetId": -1,
+    "Tags": "",
+    "Technology": "0",
+    "TimeOfDay": "14:00:00",
+    "UniqueId": "36ba87fd092f34d5084b26880000038a"
+  }
+}

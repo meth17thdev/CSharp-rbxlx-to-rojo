@@ -1,0 +1,29 @@
+{
+  "Name": "PlayerGui",
+  "ClassName": "ScreenGui",
+  "Properties": {
+    "AttributesSerialize": "",
+    "AutoLocalize": true,
+    "Capabilities": "0",
+    "ClipToDeviceSafeArea": true,
+    "DefinesCapabilities": false,
+    "DisplayOrder": 0,
+    "Enabled": true,
+    "HistoryId": "00000000000000000000000000000000",
+    "ResetOnSpawn": true,
+    "RootLocalizationTable": {
+      "Reference": "null"
+    },
+    "SafeAreaCompatibility": "0",
+    "ScreenInsets": "0",
+    "SelectionBehaviorDown": "0",
+    "SelectionBehaviorLeft": "0",
+    "SelectionBehaviorRight": "0",
+    "SelectionBehaviorUp": "0",
+    "SelectionGroup": false,
+    "SourceAssetId": -1,
+    "Tags": "",
+    "UniqueId": "2797d5e2dbdc5b43084b373c000085f5",
+    "ZIndexBehavior": "0"
+  }
+}

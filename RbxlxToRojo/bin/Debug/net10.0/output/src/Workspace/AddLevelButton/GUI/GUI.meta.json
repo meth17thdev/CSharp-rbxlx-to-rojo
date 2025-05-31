@@ -1,0 +1,43 @@
+{
+  "Name": "GUI",
+  "ClassName": "SurfaceGui",
+  "Properties": {
+    "Active": true,
+    "Adornee": {
+      "Reference": "null"
+    },
+    "AlwaysOnTop": false,
+    "AttributesSerialize": "",
+    "AutoLocalize": true,
+    "Brightness": 1.0,
+    "CanvasSize": {
+      "X": 900.0,
+      "Y": 900.0
+    },
+    "Capabilities": "0",
+    "ClipsDescendants": false,
+    "DefinesCapabilities": false,
+    "Enabled": true,
+    "Face": "0",
+    "HistoryId": "00000000000000000000000000000000",
+    "LightInfluence": 0.0,
+    "MaxDistance": 0.0,
+    "PixelsPerStud": 100.0,
+    "ResetOnSpawn": true,
+    "RootLocalizationTable": {
+      "Reference": "null"
+    },
+    "SelectionBehaviorDown": "0",
+    "SelectionBehaviorLeft": "0",
+    "SelectionBehaviorRight": "0",
+    "SelectionBehaviorUp": "0",
+    "SelectionGroup": false,
+    "SizingMode": "0",
+    "SourceAssetId": -1,
+    "Tags": "",
+    "ToolPunchThroughDistance": 0.0,
+    "UniqueId": "2797d5e2dbdc5b43084b373c000077c9",
+    "ZIndexBehavior": "0",
+    "ZOffset": 0.0
+  }
+}

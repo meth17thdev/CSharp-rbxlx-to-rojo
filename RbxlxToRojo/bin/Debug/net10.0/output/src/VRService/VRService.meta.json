@@ -1,0 +1,18 @@
+{
+  "Name": "VRService",
+  "ClassName": "VRService",
+  "Properties": {
+    "AttributesSerialize": "",
+    "AutomaticScaling": "0",
+    "AvatarGestures": false,
+    "Capabilities": "0",
+    "ControllerModels": "0",
+    "DefinesCapabilities": false,
+    "FadeOutViewOnCollision": true,
+    "HistoryId": "00000000000000000000000000000000",
+    "LaserPointer": "0",
+    "SourceAssetId": -1,
+    "Tags": "",
+    "UniqueId": "36ba87fd092f34d5084b26880000035a"
+  }
+}

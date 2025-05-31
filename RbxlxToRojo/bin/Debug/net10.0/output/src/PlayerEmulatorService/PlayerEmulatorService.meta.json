@@ -1,0 +1,20 @@
+{
+  "Name": "PlayerEmulatorService",
+  "ClassName": "PlayerEmulatorService",
+  "Properties": {
+    "AttributesSerialize": "",
+    "Capabilities": "0",
+    "CustomPoliciesEnabled": false,
+    "DefinesCapabilities": false,
+    "EmulatedCountryCode": "",
+    "EmulatedGameLocale": "",
+    "HistoryId": "00000000000000000000000000000000",
+    "PlayerEmulationEnabled": false,
+    "PseudolocalizationEnabled": false,
+    "SerializedEmulatedPolicyInfo": "",
+    "SourceAssetId": -1,
+    "Tags": "",
+    "TextElongationFactor": 0,
+    "UniqueId": "36ba87fd092f34d5084b26880000033d"
+  }
+}

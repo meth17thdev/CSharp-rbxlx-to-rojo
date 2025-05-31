@@ -1,0 +1,15 @@
+{
+  "Name": "ServiceVisibilityService",
+  "ClassName": "ServiceVisibilityService",
+  "Properties": {
+    "AttributesSerialize": "",
+    "Capabilities": "0",
+    "DefinesCapabilities": false,
+    "HiddenServices": "AAAAAA==",
+    "HistoryId": "00000000000000000000000000000000",
+    "SourceAssetId": -1,
+    "Tags": "",
+    "UniqueId": "36ba87fd092f34d5084b268800000373",
+    "VisibleServices": "AAAAAA=="
+  }
+}

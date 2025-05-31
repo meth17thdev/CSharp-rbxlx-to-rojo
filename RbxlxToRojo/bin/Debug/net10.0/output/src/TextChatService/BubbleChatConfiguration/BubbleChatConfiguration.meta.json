@@ -1,0 +1,46 @@
+{
+  "Name": "BubbleChatConfiguration",
+  "ClassName": "BubbleChatConfiguration",
+  "Properties": {
+    "AdorneeName": "HumanoidRootPart",
+    "AttributesSerialize": "",
+    "BackgroundColor3": {
+      "R": 0.98039216,
+      "G": 0.98039216,
+      "B": 0.98039216
+    },
+    "BackgroundTransparency": 0.1,
+    "BubbleDuration": 15.0,
+    "BubblesSpacing": 6.0,
+    "Capabilities": "0",
+    "DefinesCapabilities": false,
+    "Enabled": true,
+    "Font": "0",
+    "FontFace": {
+      "Family": "rbxasset://fonts/families/GothamSSm.json",
+      "Weight": 500.0,
+      "Style": null,
+      "CachedFaceId": "rbxasset://fonts/Montserrat-Medium.ttf"
+    },
+    "HistoryId": "00000000000000000000000000000000",
+    "LocalPlayerStudsOffset": {
+      "X": 0.0,
+      "Y": 0.0,
+      "Z": 0.0
+    },
+    "MaxBubbles": 3.0,
+    "MaxDistance": 100.0,
+    "MinimizeDistance": 40.0,
+    "SourceAssetId": -1,
+    "Tags": "",
+    "TailVisible": true,
+    "TextColor3": {
+      "R": 0.22352941,
+      "G": 0.23137255,
+      "B": 0.23921569
+    },
+    "TextSize": 16,
+    "UniqueId": "36ba87fd092f34d5084b26880000039b",
+    "VerticalStudsOffset": 0.0
+  }
+}

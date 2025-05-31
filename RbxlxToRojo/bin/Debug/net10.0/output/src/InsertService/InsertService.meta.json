@@ -1,0 +1,15 @@
+{
+  "Name": "InsertService",
+  "ClassName": "InsertService",
+  "Properties": {
+    "AllowClientInsertModels": false,
+    "AllowInsertFreeModels": false,
+    "AttributesSerialize": "",
+    "Capabilities": "0",
+    "DefinesCapabilities": false,
+    "HistoryId": "00000000000000000000000000000000",
+    "SourceAssetId": -1,
+    "Tags": "",
+    "UniqueId": "36ba87fd092f34d5084b268800000352"
+  }
+}

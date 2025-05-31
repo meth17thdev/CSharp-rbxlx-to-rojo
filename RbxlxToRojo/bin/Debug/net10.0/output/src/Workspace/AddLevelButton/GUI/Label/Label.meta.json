@@ -1,0 +1,110 @@
+{
+  "Name": "Label",
+  "ClassName": "TextLabel",
+  "Properties": {
+    "Active": false,
+    "AnchorPoint": {
+      "X": 0.5,
+      "Y": 0.5
+    },
+    "AttributesSerialize": "",
+    "AutoLocalize": true,
+    "AutomaticSize": "0",
+    "BackgroundColor3": {
+      "R": 0.6392157,
+      "G": 0.63529414,
+      "B": 0.64705884
+    },
+    "BackgroundTransparency": 1.0,
+    "BorderColor3": {
+      "R": 0.105882354,
+      "G": 0.16470589,
+      "B": 0.20784314
+    },
+    "BorderMode": "0",
+    "BorderSizePixel": 1,
+    "Capabilities": "0",
+    "ClipsDescendants": false,
+    "DefinesCapabilities": false,
+    "Draggable": false,
+    "FontFace": {
+      "Family": "rbxasset://fonts/families/LegacyArial.json",
+      "Weight": 400.0,
+      "Style": null,
+      "CachedFaceId": "rbxasset://fonts/Arimo-Regular.ttf"
+    },
+    "HistoryId": "00000000000000000000000000000000",
+    "Interactable": true,
+    "LayoutOrder": 0,
+    "LineHeight": 1.0,
+    "LocalizationMatchIdentifier": "",
+    "LocalizationMatchedSourceText": "",
+    "MaxVisibleGraphemes": -1,
+    "NextSelectionDown": {
+      "Reference": "null"
+    },
+    "NextSelectionLeft": {
+      "Reference": "null"
+    },
+    "NextSelectionRight": {
+      "Reference": "null"
+    },
+    "NextSelectionUp": {
+      "Reference": "null"
+    },
+    "OpenTypeFeatures": "",
+    "Position": {
+      "XS": 0.5,
+      "XO": 0.0,
+      "YS": 0.5,
+      "YO": 0.0
+    },
+    "RichText": false,
+    "RootLocalizationTable": {
+      "Reference": "null"
+    },
+    "Rotation": 90.0,
+    "Selectable": false,
+    "SelectionBehaviorDown": "0",
+    "SelectionBehaviorLeft": "0",
+    "SelectionBehaviorRight": "0",
+    "SelectionBehaviorUp": "0",
+    "SelectionGroup": false,
+    "SelectionImageObject": {
+      "Reference": "null"
+    },
+    "SelectionOrder": 0,
+    "Size": {
+      "XS": 1.0,
+      "XO": 0.0,
+      "YS": 1.0,
+      "YO": 0.0
+    },
+    "SizeConstraint": "0",
+    "SourceAssetId": -1,
+    "Tags": "",
+    "Text": "+1 lvl",
+    "TextColor3": {
+      "R": 1.0,
+      "G": 1.0,
+      "B": 1.0
+    },
+    "TextDirection": "0",
+    "TextScaled": true,
+    "TextSize": 8.0,
+    "TextStrokeColor3": {
+      "R": 0.0,
+      "G": 0.0,
+      "B": 0.0
+    },
+    "TextStrokeTransparency": 1.0,
+    "TextTransparency": 0.0,
+    "TextTruncate": "0",
+    "TextWrapped": true,
+    "TextXAlignment": "0",
+    "TextYAlignment": "0",
+    "UniqueId": "2797d5e2dbdc5b43084b373c000077ca",
+    "Visible": true,
+    "ZIndex": 1
+  }
+}

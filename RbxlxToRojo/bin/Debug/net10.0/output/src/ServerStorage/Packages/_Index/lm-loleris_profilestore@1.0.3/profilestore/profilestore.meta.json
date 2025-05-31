@@ -1,0 +1,17 @@
+{
+  "Name": "profilestore",
+  "ClassName": "ModuleScript",
+  "Properties": {
+    "AttributesSerialize": "",
+    "Capabilities": "0",
+    "DefinesCapabilities": false,
+    "HistoryId": "00000000000000000000000000000000",
+    "LinkedSource": {
+      "Url": null
+    },
+    "ScriptGuid": "{B2B0AAF0-4777-49B6-BDBD-D9B2A3DF0A35}",
+    "SourceAssetId": -1,
+    "Tags": "",
+    "UniqueId": "6d8a1cdd6dff7844084bbb3600007632"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "Name": "DepthOfField",
+  "ClassName": "DepthOfFieldEffect",
+  "Properties": {
+    "AttributesSerialize": "",
+    "Capabilities": "0",
+    "DefinesCapabilities": false,
+    "Enabled": false,
+    "FarIntensity": 0.1,
+    "FocusDistance": 0.05,
+    "HistoryId": "00000000000000000000000000000000",
+    "InFocusRadius": 30.0,
+    "NearIntensity": 0.75,
+    "SourceAssetId": -1,
+    "Tags": "",
+    "UniqueId": "36ba87fd092f34d5084b26880000038d"
+  }
+}

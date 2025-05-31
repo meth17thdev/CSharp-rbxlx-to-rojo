@@ -1,0 +1,17 @@
+{
+  "Name": "NetworkerClient",
+  "ClassName": "ModuleScript",
+  "Properties": {
+    "AttributesSerialize": "",
+    "Capabilities": "0",
+    "DefinesCapabilities": false,
+    "HistoryId": "00000000000000000000000000000000",
+    "LinkedSource": {
+      "Url": null
+    },
+    "ScriptGuid": "{A1FBC1B1-17FC-4EB0-9FCD-2759AFDB3AF5}",
+    "SourceAssetId": -1,
+    "Tags": "",
+    "UniqueId": "6d8a1cdd6dff7844084bbb3600007619"
+  }
+}

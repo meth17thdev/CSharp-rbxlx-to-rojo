@@ -1,0 +1,82 @@
+{
+  "Name": "Workspace",
+  "ClassName": "Workspace",
+  "Properties": {
+    "AirDensity": 0.0012,
+    "AllowThirdPartySales": false,
+    "AttributesSerialize": "",
+    "AvatarUnificationMode": "0",
+    "Capabilities": "0",
+    "ClientAnimatorThrottling": "0",
+    "CollisionGroupData": "AQEABP////8HRGVmYXVsdA==",
+    "CurrentCamera": {
+      "Reference": "RBXEAEAC3E5158646369E640A0A2330D369"
+    },
+    "DefinesCapabilities": false,
+    "DistributedGameTime": 0.0,
+    "ExplicitAutoJoints": true,
+    "FallHeightEnabled": true,
+    "FallenPartsDestroyHeight": -500.0,
+    "FluidForces": "0",
+    "GlobalWind": {
+      "X": 0.0,
+      "Y": 0.0,
+      "Z": 0.0
+    },
+    "Gravity": 196.2,
+    "HistoryId": "00000000000000000000000000000000",
+    "IKControlConstraintSupport": "0",
+    "LevelOfDetail": "0",
+    "MeshPartHeadsAndAccessories": "0",
+    "ModelMeshCFrame": {
+      "X": 0.0,
+      "Y": 0.0,
+      "Z": 0.0,
+      "R00": 1.0,
+      "R01": 0.0,
+      "R02": 0.0,
+      "R10": 0.0,
+      "R11": 1.0,
+      "R12": 0.0,
+      "R20": 0.0,
+      "R21": 0.0,
+      "R22": 1.0
+    },
+    "ModelMeshData": "yuZpQdnvvUBOTYh1jqZ2cA==",
+    "ModelMeshSize": {
+      "X": 0.0,
+      "Y": 0.0,
+      "Z": 0.0
+    },
+    "ModelStreamingBehavior": "0",
+    "ModelStreamingMode": "0",
+    "MoverConstraintRootBehavior": "0",
+    "NeedsPivotMigration": false,
+    "PathfindingUseImprovedSearch": "0",
+    "PhysicsImprovedSleep": "0",
+    "PhysicsSteppingMethod": "0",
+    "PlayerCharacterDestroyBehavior": "0",
+    "PrimalPhysicsSolver": "0",
+    "PrimaryPart": {
+      "Reference": "null"
+    },
+    "RejectCharacterDeletions": "0",
+    "RenderingCacheOptimizations": "0",
+    "ReplicateInstanceDestroySetting": "0",
+    "Retargeting": "0",
+    "SandboxedInstanceMode": "0",
+    "ScaleFactor": 1.0,
+    "SignalBehavior2": "0",
+    "SourceAssetId": -1,
+    "StreamOutBehavior": "0",
+    "StreamingEnabled": false,
+    "StreamingIntegrityMode": "0",
+    "StreamingMinRadius": 64,
+    "StreamingTargetRadius": 1024,
+    "Tags": "",
+    "TerrainWeldsFixed": true,
+    "TouchEventsUseCollisionGroups": "0",
+    "TouchesUseCollisionGroups": false,
+    "UniqueId": "36ba87fd092f34d5084b268800000002"
+  }
+}

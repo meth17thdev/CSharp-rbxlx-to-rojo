@@ -1,0 +1,79 @@
+{
+  "Name": "Frame",
+  "ClassName": "Frame",
+  "Properties": {
+    "Active": false,
+    "AnchorPoint": {
+      "X": 1.0,
+      "Y": 0.5
+    },
+    "AttributesSerialize": "",
+    "AutoLocalize": true,
+    "AutomaticSize": "0",
+    "BackgroundColor3": {
+      "R": 1.0,
+      "G": 1.0,
+      "B": 1.0
+    },
+    "BackgroundTransparency": 0.0,
+    "BorderColor3": {
+      "R": 0.0,
+      "G": 0.0,
+      "B": 0.0
+    },
+    "BorderMode": "0",
+    "BorderSizePixel": 0,
+    "Capabilities": "0",
+    "ClipsDescendants": false,
+    "DefinesCapabilities": false,
+    "Draggable": false,
+    "HistoryId": "00000000000000000000000000000000",
+    "Interactable": true,
+    "LayoutOrder": 0,
+    "NextSelectionDown": {
+      "Reference": "null"
+    },
+    "NextSelectionLeft": {
+      "Reference": "null"
+    },
+    "NextSelectionRight": {
+      "Reference": "null"
+    },
+    "NextSelectionUp": {
+      "Reference": "null"
+    },
+    "Position": {
+      "XS": 0.975,
+      "XO": 0.0,
+      "YS": 0.5,
+      "YO": 0.0
+    },
+    "RootLocalizationTable": {
+      "Reference": "null"
+    },
+    "Rotation": 0.0,
+    "Selectable": false,
+    "SelectionBehaviorDown": "0",
+    "SelectionBehaviorLeft": "0",
+    "SelectionBehaviorRight": "0",
+    "SelectionBehaviorUp": "0",
+    "SelectionGroup": false,
+    "SelectionImageObject": {
+      "Reference": "null"
+    },
+    "SelectionOrder": 0,
+    "Size": {
+      "XS": 0.25,
+      "XO": 0.0,
+      "YS": 0.6,
+      "YO": 0.0
+    },
+    "SizeConstraint": "0",
+    "SourceAssetId": -1,
+    "Style": "0",
+    "Tags": "",
+    "UniqueId": "2797d5e2dbdc5b43084b373c0000807d",
+    "Visible": true,
+    "ZIndex": 1
+  }
+}

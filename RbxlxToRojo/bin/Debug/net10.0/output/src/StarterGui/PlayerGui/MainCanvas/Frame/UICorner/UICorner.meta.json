@@ -1,0 +1,17 @@
+{
+  "Name": "UICorner",
+  "ClassName": "UICorner",
+  "Properties": {
+    "AttributesSerialize": "",
+    "Capabilities": "0",
+    "CornerRadius": {
+      "S": 0.025,
+      "O": 0.0
+    },
+    "DefinesCapabilities": false,
+    "HistoryId": "00000000000000000000000000000000",
+    "SourceAssetId": -1,
+    "Tags": "",
+    "UniqueId": "2797d5e2dbdc5b43084b373c0000807e"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "Name": "Texture",
+  "ClassName": "Texture",
+  "Properties": {
+    "AttributesSerialize": "",
+    "Capabilities": "0",
+    "Color3": {
+      "R": 0.0,
+      "G": 0.0,
+      "B": 0.0
+    },
+    "DefinesCapabilities": false,
+    "Face": "0",
+    "HistoryId": "00000000000000000000000000000000",
+    "OffsetStudsU": 0.0,
+    "OffsetStudsV": 0.0,
+    "SourceAssetId": -1,
+    "StudsPerTileU": 8.0,
+    "StudsPerTileV": 8.0,
+    "Tags": "",
+    "Texture": {
+      "Url": "rbxassetid://6372755229"
+    },
+    "Transparency": 0.8,
+    "UniqueId": "36ba87fd092f34d5084b268800007411",
+    "ZIndex": 1
+  }
+}

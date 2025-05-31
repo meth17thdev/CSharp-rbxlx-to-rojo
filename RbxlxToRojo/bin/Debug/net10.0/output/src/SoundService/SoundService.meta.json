@@ -1,0 +1,23 @@
+{
+  "Name": "SoundService",
+  "ClassName": "SoundService",
+  "Properties": {
+    "AmbientReverb": "0",
+    "AttributesSerialize": "",
+    "AudioApiByDefault": "0",
+    "Capabilities": "0",
+    "CharacterSoundsUseNewApi": "0",
+    "DefaultListenerLocation": "0",
+    "DefinesCapabilities": false,
+    "DistanceFactor": 3.33,
+    "DopplerScale": 1.0,
+    "HistoryId": "00000000000000000000000000000000",
+    "IsNewExpForAudioApiByDefault": false,
+    "RespectFilteringEnabled": true,
+    "RolloffScale": 1.0,
+    "SourceAssetId": -1,
+    "Tags": "",
+    "UniqueId": "36ba87fd092f34d5084b26880000031e",
+    "VolumetricAudio": "0"
+  }
+}

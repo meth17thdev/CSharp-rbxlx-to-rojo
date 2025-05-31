@@ -1,0 +1,16 @@
+{
+  "Name": "SunRays",
+  "ClassName": "SunRaysEffect",
+  "Properties": {
+    "AttributesSerialize": "",
+    "Capabilities": "0",
+    "DefinesCapabilities": false,
+    "Enabled": true,
+    "HistoryId": "00000000000000000000000000000000",
+    "Intensity": 0.01,
+    "SourceAssetId": -1,
+    "Spread": 0.1,
+    "Tags": "",
+    "UniqueId": "36ba87fd092f34d5084b26880000038f"
+  }
+}

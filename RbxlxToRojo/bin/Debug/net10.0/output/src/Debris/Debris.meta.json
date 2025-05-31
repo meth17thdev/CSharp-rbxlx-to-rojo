@@ -1,0 +1,14 @@
+{
+  "Name": "Debris",
+  "ClassName": "Debris",
+  "Properties": {
+    "AttributesSerialize": "",
+    "Capabilities": "0",
+    "DefinesCapabilities": false,
+    "HistoryId": "00000000000000000000000000000000",
+    "MaxItems": 1000,
+    "SourceAssetId": -1,
+    "Tags": "",
+    "UniqueId": "36ba87fd092f34d5084b268800000354"
+  }
+}

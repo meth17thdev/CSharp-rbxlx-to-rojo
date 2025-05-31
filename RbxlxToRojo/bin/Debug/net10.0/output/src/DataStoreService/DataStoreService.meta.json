@@ -1,0 +1,15 @@
+{
+  "Name": "DataStoreService",
+  "ClassName": "DataStoreService",
+  "Properties": {
+    "AttributesSerialize": "",
+    "AutomaticRetry": true,
+    "Capabilities": "0",
+    "DefinesCapabilities": false,
+    "HistoryId": "00000000000000000000000000000000",
+    "LegacyNamingScheme": false,
+    "SourceAssetId": -1,
+    "Tags": "",
+    "UniqueId": "36ba87fd092f34d5084b26880000588f"
+  }
+}

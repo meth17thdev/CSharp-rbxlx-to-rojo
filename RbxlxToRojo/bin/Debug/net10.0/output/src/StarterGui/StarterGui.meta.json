@@ -1,0 +1,24 @@
+{
+  "Name": "StarterGui",
+  "ClassName": "StarterGui",
+  "Properties": {
+    "AttributesSerialize": "",
+    "Capabilities": "0",
+    "DefinesCapabilities": false,
+    "HistoryId": "00000000000000000000000000000000",
+    "ResetPlayerGuiOnSpawn": true,
+    "RtlTextSupport": "0",
+    "ScreenOrientation": "0",
+    "ShowDevelopmentGui": true,
+    "SourceAssetId": -1,
+    "StudioDefaultStyleSheet": {
+      "Reference": "null"
+    },
+    "StudioInsertWidgetLayerCollectorAutoLinkStyleSheet": {
+      "Reference": "null"
+    },
+    "Tags": "",
+    "UniqueId": "36ba87fd092f34d5084b268800000345",
+    "VirtualCursorMode": "0"
+  }
+}

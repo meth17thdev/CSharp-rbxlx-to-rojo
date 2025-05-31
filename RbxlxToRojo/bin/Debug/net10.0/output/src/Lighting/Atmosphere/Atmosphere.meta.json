@@ -1,0 +1,27 @@
+{
+  "Name": "Atmosphere",
+  "ClassName": "Atmosphere",
+  "Properties": {
+    "AttributesSerialize": "",
+    "Capabilities": "0",
+    "Color": {
+      "R": 0.78,
+      "G": 0.78,
+      "B": 0.78
+    },
+    "Decay": {
+      "R": 0.416,
+      "G": 0.439,
+      "B": 0.49
+    },
+    "DefinesCapabilities": false,
+    "Density": 0.3,
+    "Glare": 0.0,
+    "Haze": 0.0,
+    "HistoryId": "00000000000000000000000000000000",
+    "Offset": 0.25,
+    "SourceAssetId": -1,
+    "Tags": "",
+    "UniqueId": "36ba87fd092f34d5084b26880000038b"
+  }
+}
