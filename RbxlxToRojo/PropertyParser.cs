@@ -260,12 +260,14 @@ public static class PropertyParser
 
     private static object ParseFont(XElement prop)
     {
+        var weightNum = prop.ParseElementAsFloat("Weight");
+        
         return new
         {
             family = prop.Element("Family")?.Element("url")?.Value,
-            weight = prop.ParseElementAsFloat("Weight"),
+            weight = GetWeight(weightNum),
             style = prop.Element("Style")?.Value,
-            cachedFaceId = prop.Element("CachedFaceId")?.Element("url")?.Value
+            //cachedFaceId = prop.Element("CachedFaceId")?.Element("url")?.Value
         };
     }
 
@@ -287,6 +289,25 @@ public static class PropertyParser
         return new
         {
             Tags = (string[])tags
+        };
+    }
+
+    private static string GetWeight(float weight)
+    {
+        return weight switch
+        {
+            100 => "Thin",
+            200 => "ExtraLight",
+            300 => "Light",
+            350 => "SemiLight",
+            400 => "Regular", // Default
+            500 => "Medium",
+            600 => "SemiBold",
+            700 => "Bold",
+            800 => "ExtraBold",
+            900 => "Heavy",
+            950 => "ExtraHeavy",
+            _ => throw new ArgumentOutOfRangeException(nameof(weight), weight, null)
         };
     }
 
