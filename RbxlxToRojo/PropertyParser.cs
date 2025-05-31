@@ -59,7 +59,6 @@ public static class PropertyParser
                 "BinaryString" => ParseBinaryString(prop),
                 "SharedString" => propValue,
                 "Content" => prop.Element("url")?.Value,
-                "Ref" => new { Reference = propValue },
                 "UniqueId" => new
                 {
                     UniqueId = propValue
