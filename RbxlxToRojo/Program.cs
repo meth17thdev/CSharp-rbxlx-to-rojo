@@ -99,7 +99,7 @@ namespace RbxlToRojo
                 var itemPath = Path.Combine(currentPath, SanitizePath(itemName));
                 Directory.CreateDirectory(itemPath);
                 
-                if (className is "LocalScript" or "Script" or "Module")
+                if (className is "LocalScript" or "Script" or "ModuleScript")
                 {
                     CreateScriptFile(item, className, itemPath);
                     continue;
@@ -117,7 +117,7 @@ namespace RbxlToRojo
             {
                 "LocalScript" => "client",
                 "Script" => "server",
-                "Module" => "",
+                "ModuleScript" => "",
                 _ => throw new ArgumentOutOfRangeException(nameof(className), className, null)
             };
         }
@@ -168,13 +168,12 @@ namespace RbxlToRojo
 
             var initContent = new
             {
-                Name = name,
-                ClassName = className,
-                Properties = properties
+                className = className,
+                properties = properties
             };
 
             File.WriteAllText(
-                Path.Combine(itemPath, $"{name}.meta.json"),
+                Path.Combine(itemPath, "init.meta.json"),
                 JsonConvert.SerializeObject(initContent, Formatting.Indented)
             );
         }
